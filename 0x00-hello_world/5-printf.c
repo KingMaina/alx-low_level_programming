@@ -3,7 +3,7 @@
 /*
  * main - Entry point
  *
- * Prints a string to stdout using printf()
+ * Description: Prints a string to stdout using printf()
  *
  * Return: 0 (sucess)
  *
