@@ -4,9 +4,7 @@
  * main - Entry point
  *
  * Description: Prints a string to stdout using printf()
- *
  * Return: 0 (sucess)
- *
  */
 int main(void)
 {
