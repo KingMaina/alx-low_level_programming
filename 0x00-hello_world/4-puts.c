@@ -1,13 +1,13 @@
 #include <stdio.h>
 
-/*
+/**
  * main - Entry point
  *
- * prints a string to stdout using puts()
+ * Prints a string to stdout using puts()
  *
- * return 0(success)
+ * Return: 0(success)
  *
- * */
+ */
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
