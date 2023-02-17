@@ -3,7 +3,7 @@
 /**
  * main - Entry point
  *
- * Description: Prints all possible combinations of 
+ * Description: Prints all possible combinations of
  * single-digit numbers separated by commas.
  * Return: 0 (Success)
  */
