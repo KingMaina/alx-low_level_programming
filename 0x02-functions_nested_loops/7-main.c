@@ -16,8 +16,6 @@ int main(void)
 	print_last_digit(-98);
 	r = print_last_digit(-45763);
 	printf("%d\n", r);
-	_putchar('0' + r);
-	_putchar('\n');
 
 	return (0);
 }
