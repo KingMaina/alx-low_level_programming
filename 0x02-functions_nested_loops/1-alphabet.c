@@ -3,8 +3,8 @@
 /**
  * print_alphabet - Prints the alphabet characters in lowercase.
  *
- * Description: Prints the alphabet n lowercase using a custom putchar()
- function _putchar()
+ * Description: Prints the alphabet in lowercase
+ * using a custom putchar() function
  * Return: void
  */
 void print_alphabet(void)
