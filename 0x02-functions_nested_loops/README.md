@@ -13,3 +13,7 @@ This repo contains small projects about functions and nested loops concepts usin
 - Entry point of application. Has main function.
 ## 1-alphabet.c
 - Has a function print\_alphabet that prints the alphabet in lowercase using our custom \_puthchar().
+## 2-print\_alphabet\_x10.c
+- Prints the alphabet characters ten times using loops.
+## 3-islower.c
+- Checks if an argument is a lowercase alphabet character or not.
