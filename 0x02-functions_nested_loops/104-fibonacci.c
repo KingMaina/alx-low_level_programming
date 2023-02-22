@@ -10,17 +10,17 @@
 int main(void)
 {
 	int i = 0;
-	long num1 = 1;
-	long num2 = 2;
-	long sum;
+	long int num1 = 1;
+	long int num2 = 2;
+	long int sum;
 
-	printf("%lu, %lu, ", num1, num2);
-	for (; i < 98; i++)
+	printf("%li, %li, ", num1, num2);
+	for (; i < 99; i++)
 	{
 		sum = num1 + num2;
 		num1 = num2;
 		num2 = sum;
-		printf("%lu, ", sum);
+		printf("%li, ", sum);
 	}
 	printf("\n");
 	return (0);
