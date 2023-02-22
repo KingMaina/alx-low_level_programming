@@ -9,8 +9,8 @@
  */
 int main(void)
 {
-	long int num1 = 1;
-	long int num2 = 2;
+	long int num1 = 0;
+	long int num2 = 1;
 	long int sum;
 	long int evenSum = 0;
 
@@ -25,5 +25,6 @@ int main(void)
 			num2 = sum;
 		}
 	printf("%li\n", evenSum);
+
 	return (0);
 }
