@@ -10,19 +10,19 @@
 int main(void)
 {
 	int i = 0;
-	float num1 = 0;
-	float num2 = 1;
-	float sum;
+	unsigned int num1 = 0;
+	unsigned int num2 = 1;
+	unsigned int sum;
 
 	for (; i < 97; i++)
 	{
 		sum = num1 + num2;
-		printf("%.0f, ", sum);
+		printf("%u, ", sum);
 		num1 = num2;
 		num2 = sum;
 	}
 	sum = num1 + num2;
-	printf("%.0f\n", sum);
+	printf("%u\n", sum);
 
 	return (0);
 }
