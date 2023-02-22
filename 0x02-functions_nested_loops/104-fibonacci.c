@@ -14,14 +14,14 @@ int main(void)
 	long int num2 = 2;
 	long int sum;
 
-	printf("%li, %li, ", num1, num2);
 	for (; i < 99; i++)
 	{
 		sum = num1 + num2;
+		printf("%li, ", sum);
 		num1 = num2;
 		num2 = sum;
-		printf("%li, ", sum);
 	}
+	sum = num1 + num2;
 	printf("\n");
 	return (0);
 }
