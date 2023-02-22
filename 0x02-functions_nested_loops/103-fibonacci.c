@@ -2,12 +2,12 @@
 #include "main.h"
 
 /**
- * print_fibonacci - Prints the sum of  even fibonacci values below 4 million.
+ * main - Prints the sum of  even fibonacci values below 4 million.
  *
  * Description: Prints the sum of even fibonacci numbers below 4000000.
  * Return: void
  */
-void print_fibonacci(void)
+int main(void)
 {
 	long int num1 = 1;
 	long int num2 = 2;
@@ -25,4 +25,5 @@ void print_fibonacci(void)
 			num2 = sum;
 		}
 	printf("%li\n", evenSum);
+	return (0);
 }
