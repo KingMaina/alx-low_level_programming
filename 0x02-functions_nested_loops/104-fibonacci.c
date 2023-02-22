@@ -10,11 +10,11 @@
 int main(void)
 {
 	int i = 0;
-	long int num1 = 1;
-	long int num2 = 2;
+	long int num1 = 0;
+	long int num2 = 1;
 	long int sum;
 
-	for (; i < 99; i++)
+	for (; i < 97; i++)
 	{
 		sum = num1 + num2;
 		printf("%li, ", sum);
