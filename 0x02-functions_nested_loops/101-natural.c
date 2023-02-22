@@ -2,13 +2,13 @@
 #include "main.h"
 
 /**
- * print_natural_sum -  Prints sum of natural numbers divisible by 3 or 5
+ * main -  Prints sum of natural numbers divisible by 3 or 5
  *
  * Description: Print sum of natural numbers upto 1024
  * that are divisble by 3 or 5.
- * Return: void
+ * Return: 0 Success
  */
-void print_natural_sum(void)
+int main(void)
 {
 	int i = 1024;
 	int sum = 0;
@@ -21,4 +21,6 @@ void print_natural_sum(void)
 		}
 	}
 	printf("%d\n", sum);
+
+	return (0);
 }

@@ -1,17 +1,16 @@
 #include "main.h"
 
 /**
- * times_table - prints the times table.
+ * print_times_table - prints the times table.
  * @n: The factor to print multiplication table for.
-
+ *
  * Description: Prints the times table.
  * Returns: void
  */
 void print_times_table(int n)
 {
 	int row = 0;
-	int column;
-	int product;
+	int column, product;
 
 	if (n >= 0 && n <= 15)
 	{
