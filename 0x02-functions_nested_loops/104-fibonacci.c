@@ -2,12 +2,12 @@
 #include "main.h"
 
 /**
- * print_fibonacci - Prints first 98 fibonacci numbers
+ * main - Prints first 98 fibonacci numbers
  *
  * Description: Print first 98 fibonacci numbers
  * Return: void
  */
-void print_fibonacci(void)
+int main(void)
 {
 	int i = 0;
 	long num1 = 1;
@@ -23,4 +23,5 @@ void print_fibonacci(void)
 		printf("%lu, ", sum);
 	}
 	printf("\n");
+	return (0);
 }

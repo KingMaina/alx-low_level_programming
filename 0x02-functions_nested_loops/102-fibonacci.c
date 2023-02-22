@@ -10,19 +10,19 @@
 int main(void)
 {
 	int i = 0;
-	long num1 = 1;
-	long num2 = 2;
+	long num1 = 0;
+	long num2 = 1;
 	long sum;
 
-	printf("%lu, %lu, ", num1, num2);
-	for (; i < 48; i++)
+	for (; i < 49; i++)
 	{
 		sum = num1 + num2;
+		printf("%li, ", sum);
 		num1 = num2;
 		num2 = sum;
-		printf("%lu, ", sum);
 	}
-	printf("\n");
+	sum = num1 + num2;
+	printf("%li\n", sum);
 
 	return (0);
 }
