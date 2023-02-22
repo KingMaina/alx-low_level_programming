@@ -11,19 +11,19 @@ int main(void)
 {
 	long int num1 = 0;
 	long int num2 = 1;
-	long int sum;
+	long int sum = 0;
 	long int evenSum = 0;
 
-		while (sum < 4000000)
+	while (sum < 4000000)
+	{
+		sum = num1 + num2;
+		if (sum % 2 == 0)
 		{
-			sum = num1 + num2;
-			if (sum % 2 == 0)
-			{
-				evenSum += sum;
-			}
-			num1 = num2;
-			num2 = sum;
+			evenSum += sum;
 		}
+		num1 = num2;
+		num2 = sum;
+	}
 	printf("%li\n", evenSum);
 
 	return (0);
