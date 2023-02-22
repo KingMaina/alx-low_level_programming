@@ -10,18 +10,19 @@
 int main(void)
 {
 	int i = 0;
-	long int num1 = 0;
-	long int num2 = 1;
-	long int sum;
+	float num1 = 0;
+	float num2 = 1;
+	float sum;
 
 	for (; i < 97; i++)
 	{
 		sum = num1 + num2;
-		printf("%li, ", sum);
+		printf("%.0f, ", sum);
 		num1 = num2;
 		num2 = sum;
 	}
 	sum = num1 + num2;
-	printf("\n");
+	printf("%.0f\n", sum);
+
 	return (0);
 }
