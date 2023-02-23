@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
-* print_number - prints a number
-* @n: integer
-*
-*/
+ * print_number - prints a number
+ * @n: integer
+ *
+ */
 void print_number(int n)
 {
 	int divisor = 1;
