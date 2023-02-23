@@ -8,21 +8,21 @@
 */
 void print_triangle(int size)
 {
-	int row, column, threshold;
+	int row, column;
+	int threshold = size - 1;
 
 	if (size > 0)
 	{
 		for (row = 1; row <= size; row++)
 		{
-			threshold = size - 1;
 			for (column = 1; column <= size; column++)
 			{
-				if (threshold == 0)
+				if (column > threshold)
 					_putchar('#');
 				else
 					_putchar(' ');
-				threshold--;
 			}
+			threshold--;
 		_putchar('\n');
 		}
 	}
