@@ -10,7 +10,7 @@ void more_numbers(void)
 	int i;
 	int loopCounter = 0;
 	int printNumberCounter = 0;
-	int maxNumber= 14;
+	int maxNumber = 14;
 
 	while (loopCounter++ <= maxNumber)
 	{
