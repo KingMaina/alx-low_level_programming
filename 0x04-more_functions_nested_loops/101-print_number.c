@@ -21,7 +21,7 @@ void print_number(int n)
 	{
 		digit = n / divisor;
 		_putchar(digit + '0');
-		n % divisor;
-		divisor %= 10;
+		n %= divisor;
+		divisor /= 10;
 	}
 }
