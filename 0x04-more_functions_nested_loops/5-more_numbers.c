@@ -8,11 +8,10 @@
 void more_numbers(void)
 {
 	int i;
-	int loopCounter = 0;
+	int loopCounter = 1;
 	int printNumberCounter = 0;
-	int maxNumber = 14;
 
-	while (loopCounter++ <= maxNumber)
+	while (loopCounter++ <= 10)
 	{
 		printNumberCounter = 0;
 		for (i = '0'; i <= '9';)
