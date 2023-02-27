@@ -9,6 +9,9 @@
 int main(void)
 {
 	int array[5];
+	int arr[1] = {
+		98
+	};
 
 	array[0] = 98;
 	array[1] = 402;
@@ -16,6 +19,8 @@ int main(void)
 	array[3] = 298;
 	array[4] = -1024;
 	print_array(array, 5);
+
+	print_array(arr, 0);
 
 	return (0);
 }
