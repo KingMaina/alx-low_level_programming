@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
@@ -12,10 +11,6 @@ void swap_int(int *a, int *b)
 {
 	int tempA = *a;
 
-	printf("a=%d, b=%d\n", *a, *b); 
-	printf("tempA=%d\n", tempA); 
-
 	*a = *b;
 	*b = tempA;
-	printf("a=%d, b=%d\n", *a, *b);
 }
