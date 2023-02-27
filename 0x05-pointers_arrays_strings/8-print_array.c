@@ -12,10 +12,6 @@ void print_array(int *a, int n)
 {
 	int i = 0;
 
-	if (n == 0)
-		printf("%d", *a);
-	else
-	{
 		while (i < n && n > 0)
 		{
 			printf("%d", *(a + i++));
@@ -24,5 +20,4 @@ void print_array(int *a, int n)
 			else
 				printf("\n");
 		}
-	}
 }
