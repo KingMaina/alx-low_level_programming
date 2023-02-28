@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 
-int positive_or_negative(int number, int negativeSignCount);
+int positive_or_negative(unsigned int number, int negativeSignCount);
 
 /**
 * positive_or_negative - returns a positive or negative
@@ -11,7 +11,7 @@ int positive_or_negative(int number, int negativeSignCount);
 *
 * Return: a positive or negative integer.
 */
-int positive_or_negative(int number, int negativeSignCount)
+int positive_or_negative(unsigned int number, int negativeSignCount)
 {
 	if (negativeSignCount % 2 != 0)
 		number *= -1;
@@ -27,8 +27,8 @@ int positive_or_negative(int number, int negativeSignCount)
 int _atoi(char *s)
 {
 	int sIndex;
-	int convertedNumber = 0;
-	int *convertedNumberPointer;
+	unsigned int convertedNumber = 0;
+	unsigned int *convertedNumberPointer;
 	int negativeSignCount = 0;
 	int multiplier = 1;
 
