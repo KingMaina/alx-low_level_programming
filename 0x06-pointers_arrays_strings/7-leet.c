@@ -2,11 +2,11 @@
 
 /**
 * leet - encodes a string into 1337.
-* @str: String to encode.
+* @s: String to encode.
 *
 * Return: a pointer to the encodeed string.
 */
-char *leet(char *str)
+char *leet(char *s)
 {
 	int i;
 
@@ -23,5 +23,5 @@ char *leet(char *str)
 		else if (s[i] == 'l' || s[i] == 'L')
 			s[i] = '1';
 	}
-	return (str);
+	return (s);
 }
