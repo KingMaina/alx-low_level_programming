@@ -10,16 +10,16 @@
 */
 char *_strncat(char *dest, char *src, int n)
 {
-	char *destCopy = dest;
+	char *ptr = dest;
 
-	while (*dest)
-		dest++;
+	while (*ptr)
+		ptr++;
 	while (n--)
 	{
-		*dest = *src;
-		dest++;
+		*ptr = *src;
+		ptr++;
 		src++;
 	}
 
-	return (destCopy);
+	return (dest);
 }
