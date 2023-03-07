@@ -16,6 +16,12 @@ int main(void)
 	if (f != NULL)
 		printf("%s\n", f);
 
+	f = _strchr(s, 'r');
+	printf("%s\n", f);
+
+	f = _strchr(s, 'h');
+	printf("%s\n", f);
+
 	return (0);
 }
 
