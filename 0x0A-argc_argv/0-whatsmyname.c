@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+/**
+* main - Entry point of application.
+* @argc: number of arguments including the program name
+* @argv: arbitrary number of string arguments
+*
+* Return: Always 0
+*/
+int main(int argc, char *argv[])
+{
+	if (argc)
+		printf("%s\n", argv[0]);
+
+	return (0);
+}
