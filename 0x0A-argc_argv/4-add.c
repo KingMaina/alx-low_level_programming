@@ -38,13 +38,15 @@ int main(int argc, char *argv[])
 			for (j = 0; argv[i][j]; j++)
 			{
 				isDigit = _isdigit(argv[i][j]);
-				if (isDigit)
-					sum += (atoi(argv[i]));
-				else
-				{
-					printf("Error\n");
-					return (1);
-				}
+				if (isDigit == 0)
+					break;
+			}
+			if (isDigit)
+				sum += (atoi(argv[i]));
+			else
+			{
+				printf("Error\n");
+				return (1);
 			}
 		}
 		printf("%d\n", sum);
