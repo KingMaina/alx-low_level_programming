@@ -1,5 +1,20 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "main.h"
+
+/**
+* _isdigit - checks for a digit
+* @c: integer
+*
+* Return: 1 if true, 0 otherwise
+*/
+int _isdigit(int c)
+{
+	if (c >= '0' && c <= '9')
+		return (1);
+	else
+		return (0);
+}
 
 /**
 * main - Entry point of application.
@@ -10,7 +25,7 @@
 */
 int main(int argc, char *argv[])
 {
-	int i, sum = 0;
+	int i, j, isDigit, sum = 0;
 
 	if (argc < 2)
 	{
@@ -20,12 +35,16 @@ int main(int argc, char *argv[])
 	{
 		for (i = 1; i < argc; i++)
 		{
-			if (**(argv + i) >= '0' && **(argv + i) <= '9')
-				sum += atoi(*(argv + i));
-			else
+			for (j = 0; argv[i][j]; j++)
 			{
-				printf("Error\n");
-				return (1);
+				isDigit = _isdigit(argv[i][j]);
+				if (isDigit)
+					sum += (atoi(argv[i]));
+				else
+				{
+					printf("Error\n");
+					return (1);
+				}
 			}
 		}
 		printf("%d\n", sum);

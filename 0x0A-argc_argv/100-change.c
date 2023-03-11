@@ -38,8 +38,7 @@ int main(int argc, char *argv[])
 				cash -= 1;
 			cents++;
 		}
+		printf("%d\n", cents);
 	}
-	printf("%d\n", cents);
-	
 	return (0);
 }
