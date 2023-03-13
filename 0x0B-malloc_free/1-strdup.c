@@ -31,11 +31,10 @@ char *_strdup(char *str)
 	char *strCopyPtr;
 	unsigned int i, strLength;
 
-	strLength = (unsigned int) _strlen(str);
-
-	if (strLength == 0)
+	if (str == NULL)
 		return (NULL);
-	strLength++;
+
+	strLength = (unsigned int) _strlen(str) + 1;
 	strCopyPtr = (char *) malloc(strLength * sizeof(char));
 
 	if (strCopyPtr == NULL)
