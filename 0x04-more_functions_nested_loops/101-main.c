@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <limits.h>
 
 /**
 * main - runs the program
@@ -15,6 +16,8 @@ int main(void)
 	print_number(0);
 	printf("\n");
 	print_number(124);
+	printf("\n");
+	print_number(INT_MIN);
 	printf("\n");
 
 	return (0);
