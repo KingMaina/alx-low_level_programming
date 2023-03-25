@@ -17,3 +17,5 @@ This repo contains small projects about functions and nested loops concepts usin
 - Prints the alphabet characters ten times using loops.
 ## 3-islower.c
 - Checks if an argument is a lowercase alphabet character or not.
+### 4-isalpha.c
+- Checks if a character is alphabetic
