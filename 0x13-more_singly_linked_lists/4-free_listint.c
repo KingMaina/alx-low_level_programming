@@ -10,13 +10,15 @@ void free_listint(listint_t *head)
 {
 	listint_t *current_node, *next_node;
 
-	current_node = next_node = head;
-
-	while (current_node->next)
+	if (head != NULL)
 	{
-		next_node = next_node->next;
+		current_node = next_node = head;
+		while (current_node->next)
+		{
+			next_node = next_node->next;
+			free(current_node);
+			current_node = next_node;
+		}
 		free(current_node);
-		current_node = next_node;
 	}
-	free(current_node);
 }

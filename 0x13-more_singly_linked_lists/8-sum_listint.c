@@ -13,12 +13,11 @@ int sum_listint(listint_t *head)
 	int sum = 0;
 
 	traverse = head;
-	while (traverse->next != NULL)
+	while (traverse != NULL)
 	{
 		sum += traverse->n;
 		traverse = traverse->next;
 	}
-	sum += traverse->n;
 
 	return (sum);
 }
