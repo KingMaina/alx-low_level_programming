@@ -4,7 +4,7 @@
 * pop_listint - Removes the first node out of the list
 * @head: pointer to a pointer to the head node
 *
-* Return: the value of the removed node
+* Return: the value of the removed node, 0 otherwise if list is empty
 */
 int pop_listint(listint_t **head)
 {
