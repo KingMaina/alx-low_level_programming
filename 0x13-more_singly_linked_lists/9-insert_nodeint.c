@@ -103,7 +103,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		return (new_node);
 	}
 	if (idx == listint_len(*head))
-		return(add_nodeint_end(head, n));
+		return (add_nodeint_end(head, n));
 	current_node = get_nodeint_at_index(*head, idx);
 	if (current_node == NULL)
 		return (NULL);
