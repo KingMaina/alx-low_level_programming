@@ -27,7 +27,7 @@ int main(void)
 	insert_nodeint_at_index(&head, 1, 8361);
 	print_listint(head);
 	printf("-----------------------------\n");
-	insert_nodeint_at_index(&head, 0, 385);
+	insert_nodeint_at_index(&head, 9, 385);
 	print_listint(head);
 	printf("-----------------------------\n");
 	free_listint2(&head);
