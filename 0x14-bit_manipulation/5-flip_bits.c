@@ -16,7 +16,7 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 
 	while (n || m)
 	{
-		if((n & bitMask) != (m & bitMask))
+		if ((n & bitMask) != (m & bitMask))
 			bitsToFlip++;
 		n >>= bitsToShift;
 		m >>= bitsToShift;
