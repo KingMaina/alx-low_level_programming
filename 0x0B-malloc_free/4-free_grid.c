@@ -13,6 +13,10 @@ void free_grid(int **grid, __attribute__((unused))int height)
 	int i;
 
 	for (i = 0; i < height; i++)
+	{
 		free(grid[i]);
+		grid[i] = NULL;
+	}
 	free(grid);
+	grid = NULL;
 }
