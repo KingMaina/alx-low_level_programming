@@ -36,13 +36,13 @@ char *str_concat(char *s1, char *s2)
 		s2Len = _strlen(s2);
 	else
 		s2 = "";
-	concatenatedList = malloc(sizeof(char *) * (s1Len + s2Len + SIZE_NULL_BYTE));
+	concatenatedList = malloc(sizeof(char) * (s1Len + s2Len + SIZE_NULL_BYTE));
 	if (!concatenatedList)
 		return (NULL);
 	for (i = 0; s1[i]; i++)
 		concatenatedList[i] = s1[i];
 	for (j = 0; s2[j]; j++)
-		concatenatedList[i] = s2[j];
+		concatenatedList[i++] = s2[j];
 	concatenatedList[i] = '\0';
 	return (concatenatedList);
 }
