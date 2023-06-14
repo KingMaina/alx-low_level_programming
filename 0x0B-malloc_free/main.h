@@ -14,5 +14,6 @@ int _strlen(char *s);
 void simple_print_buffer(char *buffer, unsigned int size);
 int **alloc_grid(int width, int height);
 void free_grid(int **grid, int height);
+char *argstostr(int ac, char **av);
 
 #endif /* #ifndef__MALLOC_FREE__*/
