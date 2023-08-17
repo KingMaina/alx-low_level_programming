@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
-* get_dnodeint - Searches and returns the node at the given index.
+* get_dnodeint_at_index - Searches and returns the node at the given index.
 * @head: Pointer to the head node
 * @index: Index position of the node to look for
 *
