@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cd ../ && \
+gcc -Wall -Wextra -Werror -pedantic -std=gnu89 2*.c 1-djb2.c -o 2-index && \
+valgrind --leak-check=full ./2-index
