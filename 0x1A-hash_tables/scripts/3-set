@@ -1,5 +1,5 @@
 #!/bin/bash
 
 cd ../ && \
-gcc -Wall -Wextra -Werror -pedantic -std=gnu89 3*.c 0-hash_table_create.c 1-djb2.c -o 3-set && \
-valgrind --leak-check=full ./3-set
+gcc -Wall -Wextra -Werror -pedantic -std=gnu89 3*.c 0-hash_table_create.c 1-djb2.c -o 3-set 2-key_index.c && \
+valgrind --leak-check=full --show-leak-kinds=all ./3-set

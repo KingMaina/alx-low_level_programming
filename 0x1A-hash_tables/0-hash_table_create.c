@@ -8,9 +8,11 @@
 */
 hash_table_t *hash_table_create(unsigned long int size)
 {
+	unsigned long int index;
+
 	if (size > 0)
 	{
-		hash_table_t *table = malloc(sizeof(*table));
+		hash_table_t *table = malloc(sizeof(hash_table_t));
 
 		if (!table)
 		{
@@ -23,6 +25,12 @@ hash_table_t *hash_table_create(unsigned long int size)
 		{
 			perror("malloc");
 			return (NULL);
+		}
+		for (index = 0; index < size; index++)
+		{
+			table->array[index]->key = 	NULL;
+			table->array[index]->value = NULL;
+			table->array[index]->next = NULL;
 		}
 		return (table);
 	}
