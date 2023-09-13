@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cd ../ && \
+gcc -Wall -Werror -Wextra -pedantic -std=gnu89 4*.c 0-hash_table_create.c 1-djb2.c 2-key_index.c 3-hash_table_set.c -o 4-get && \
+valgrind --leak-check=full --show-leak-kinds=all ./4-get
