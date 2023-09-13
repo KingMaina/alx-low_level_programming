@@ -1,0 +1,7 @@
+#!/bin/bash
+
+cd ../ && \
+gcc -Wall -Werror -Wextra -pedantic -std=gnu89 \
+6*.c 0-hash_table_create.c 1-djb2.c 2-key_index.c \
+3-hash_table_set.c 4-hash_table_get.c 5-hash_table_print.c -o 6-delete && \
+valgrind --leak-check=full --show-leak-kinds=all ./6-delete
