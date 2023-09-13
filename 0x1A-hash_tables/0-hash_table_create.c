@@ -20,7 +20,7 @@ hash_table_t *hash_table_create(unsigned long int size)
 			return (NULL);
 		}
 		table->size = size;
-		table->array = calloc(table->size, sizeof(*(table->array)));
+		table->array = malloc(sizeof(*(table->array)) * table->size);
 		if (!table->array)
 		{
 			perror("malloc");
@@ -28,9 +28,7 @@ hash_table_t *hash_table_create(unsigned long int size)
 		}
 		for (index = 0; index < size; index++)
 		{
-			table->array[index]->key = 	NULL;
-			table->array[index]->value = NULL;
-			table->array[index]->next = NULL;
+			table->array[index] = NULL;
 		}
 		return (table);
 	}
