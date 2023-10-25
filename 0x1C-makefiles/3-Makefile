@@ -8,10 +8,10 @@ all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
 .PHONY = clean oclean fclean re
-fclean: oclean clean
+clean:
+	$(RM) *~ $(NAME)
 oclean:
 	$(RM) $(OBJ)
-clean:
-	$(RM) $(NAME) *.swp *~
+fclean: oclean clean
 re: oclean all
 
