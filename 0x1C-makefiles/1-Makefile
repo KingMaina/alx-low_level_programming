@@ -4,6 +4,6 @@ SRC := $(wildcard *.c) # source files
 
 all: school
 
-school: main.o school.o m.h
+school: ${SRC} m.h
 	${CC} ${SRC} -o $@
 
