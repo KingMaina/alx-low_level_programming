@@ -10,8 +10,8 @@ all: $(OBJ)
 .PHONY = clean oclean fclean re
 fclean: oclean clean
 oclean:
-	${RM} ${OBJ}
+	$(RM) $(OBJ)
 clean:
-	${RM} ${NAME} *.swp *~
+	$(RM) $(NAME) *.swp *~
 re: oclean all
 
