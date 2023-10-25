@@ -1,9 +1,7 @@
 CC = gcc # compiler
 
-SRC := $(wildcard *.c) # source files
+SRC = main.c school.c # source files
 
-all: school
-
-school: ${SRC} m.h
-	${CC} ${SRC} -o $@
+all: $(SRC)
+	$(CC) $(SRC) -o school
 
